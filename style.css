@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.content {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+#videoBG {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    transition: .5s linear;
+    padding: 40px 0;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    transition: .2s linear;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-left: 30px;
+    transition: .2s linear;
+    padding: 0 10px;
+}
+
+.navbar-menu a:hover {
+    color: rgb(28, 42, 107);
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-toggler {
+    font-size: 2.3rem;
+    color: white;
+    display: none !important;
+    cursor: pointer;
+}
+
+#motto{
+    margin: auto;
+    width: 60%;
+    max-height: 450px;
+    margin-top: 13%;
+}
+
+#motto .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#motto h2 {
+    font-size: 8rem;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: rgb(28, 42, 107);
+}
+
+#motto h3 {
+    font-size: 6rem;
+    color: white;
+    padding-top: 0;
+}
+
+#motto p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.explore {
+    width: 150px;
+    height: 50px;
+    border: solid 3px white;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-top: 20px;
+    transition: .2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore a {
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.explore:hover {
+    transform: scale(110%);
+    letter-spacing: 3px;
+}
+
+#sm {
+    display: flex;
+    justify-content: center;
+}
+
+#sm .content {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+#sm a {
+    color: white;
+    font-size: 2rem;
+    transition: .2s linear;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#sm a:hover {
+    font-size: 3rem;
+}
+
+@media (max-width: 980px) {
+    .menu-toggler{
+        display: block !important;   
+    }
+
+    .menu-toggler.active {
+        z-index: 999;
+        color: black;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .navbar-menu{
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        background-color: white;
+        top: 30px;
+        transition: all 0.3s linear 0s;
+        right: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar-menu.active {
+        right: 0;
+    }
+
+    .navbar-menu a {
+        color: black;
+        display: block;
+        margin: 10px;
+    }
+
+    .navbar-menu a:hover {
+        color: rgb(28, 42, 107);
+    }
+    
+    #motto {
+        margin-top:100px;
+        width: 60%;
+    }
+
+    #motto h2 {
+        font-size: 7rem;
+    }
+
+    #motto h3 {
+        font-size: 5rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #motto {
+        margin-top:40px;
+    }
+
+    #motto h2 {
+        font-size: 6rem;
+    }
+
+    #motto h3 {
+        font-size: 4rem;
+    }
+
+@media (max-width: 444px) {
+    #motto {
+        width: 80%;
+        margin-top:40px;
+    }
+
+    #motto h2 {
+        font-size: 5rem;
+    }
+
+    #motto h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 330px) {
+    #motto {
+        width: 100%;
+        margin-top:10px;
+    }
+
+    #motto h2 {
+        font-size: 4rem;
+    }
+
+    #motto h3 {
+        font-size: 3rem;
+    }
+}
+}
