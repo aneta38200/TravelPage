@@ -223,16 +223,16 @@
 
 @media (max-width: 444px) {
     #motto {
-        width: 80%;
-        margin-top:40px;
+        width: 90%;
+        margin-top:10px;
     }
 
     #motto h2 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     #motto h3 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
